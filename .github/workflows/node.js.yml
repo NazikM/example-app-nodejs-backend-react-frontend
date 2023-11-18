@@ -27,5 +27,7 @@ jobs:
         cache: 'npm'
     - name: List all files
       run: ls -la
+    - name: Change perm mode for script.sh
+      run: chmod 744 script.sh
     - name: Run script.sh
       run: ./script.sh
