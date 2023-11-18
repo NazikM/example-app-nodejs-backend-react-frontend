@@ -25,5 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: List all files
+      run: ls -la
     - name: Run script.sh
-      uses: ./script.sh
+      run: ./script.sh
